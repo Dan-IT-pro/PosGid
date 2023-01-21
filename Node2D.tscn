@@ -171,6 +171,8 @@ position = Vector2( -4, -9 )
 [node name="Area2D3" parent="Node2D" instance=ExtResource( 3 )]
 position = Vector2( -225, -10 )
 
+[node name="Node2D2" type="Node2D" parent="."]
+
 [connection signal="body_entered" from="Node2D/Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Node2D/Area2D2" to="KinematicBody2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Node2D/Area2D4" to="KinematicBody2D" method="_on_Area2D_body_entered"]
