@@ -22,3 +22,7 @@ func _physics_process(delta):
 			jump_count += 1
 	vel.y += graviti * delta
 	vel = move_and_slide(vel, Vector2.UP)
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().reload_current_scene()
